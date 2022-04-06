@@ -29,7 +29,6 @@ function HeaderLogged(props) {
                         </Link>
                     </Column>
                 </Column.Group>
-                {/* Menu para mobile */}
                 <Navbar.Burger
                     className="navbar-burger burger"
                     aria-label="menu"
@@ -42,7 +41,6 @@ function HeaderLogged(props) {
             </Navbar.Brand>
 
             <Navbar.Menu>
-                {/* Botão que irá ativar o "setItOpen" */}
                 <Navbar.Segment as="div" className="navbar-item navbar-start" align="start">
                     <Navbar.Item as="div">
                         <Button

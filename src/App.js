@@ -5,7 +5,6 @@ import Router from './routes';
 
 const App = () => (
   <Fragment>
-    {/* Chamando a página inicial */}
     <Router />
   </Fragment>
 )

@@ -8,15 +8,12 @@ import UserEditScreen from '../src/assets/screens/users/edit'
 import PrivateRoute from './assets/components/auth/private_route';
 
 
-//Uma rota para devolver o BG da home
 const Router = () => (
     <BrowserRouter>
         <Routes>
-            {/* Rotas para cada página do site */}
             <Route path="/" element={<HomeScreen />} />
             <Route path='/register' element={<RegisterScreen />} />
             <Route path='/login' element={<LoginScreen />} />
-            {/* Só acessaram quem estiver logado */}
             <Route element={<PrivateRoute />} >
                 <Route path='/notes' element={<NotesScreen />} />
                 <Route path='/users/edit' element={<UserEditScreen />} />

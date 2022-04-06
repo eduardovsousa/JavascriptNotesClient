@@ -5,7 +5,6 @@ import logoImage from '../../../../assets/images/logo.png'
 import '../../../../styles/auth.scss'
 import LoginForm from '../../../components/auth/login_form'
 
-//Tela padrão de login caso não tenha notas
 const LoginScreen = () => (
     <Fragment>
         <Header />
@@ -30,7 +29,6 @@ const LoginScreen = () => (
                                             </Title>
                                         </Column>
                                     </Column.Group>
-                                    {/* Formulário de login */}
                                     <LoginForm />
                                 </Section>
                             </Card.Content>

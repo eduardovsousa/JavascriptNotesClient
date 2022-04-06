@@ -1,20 +1,15 @@
 import { Fragment } from "react";
-//Imagem de apresentação
 import PresentationImage from '../../images/presentation.png'
 import Header from '../../components/header'
-//Responsividade do Bulma
 import { Column, Section, Title, Container } from 'rbx'
-//Importando o scss do menu
 import '../../../styles/home.scss';
 import { Link } from 'react-router-dom'
 
 
 const HomeScreen = () => (
     <Fragment>
-        {/* Chamando o header, onde está o menu de navegação  */}
         <Header />
 
-        {/* Separação as seções */}
         <Section size="medium" className="home">
             <Container>
                 <Column.Group>

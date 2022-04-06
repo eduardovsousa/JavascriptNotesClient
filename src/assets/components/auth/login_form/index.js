@@ -13,11 +13,9 @@ function LoginForm() {
     const HandleSubmit = async (evt) => {
         evt.preventDefault()
         try {
-            //Se tudo der certo, o usuário será redirecionado para as notas
             const user = await UsersSerivces.login({ email: email, password: password })
             setRedirectToNotes(true)
         } catch (error) {
-            //Caso dê errado, aparecerá um erro
             setError(true)
         }
     }
